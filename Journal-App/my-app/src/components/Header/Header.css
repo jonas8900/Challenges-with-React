@@ -1,3 +1,5 @@
-header {
-  color: var(--color-granite);
+.header__h1--settings {
+  background-color: var(--color-water-10);
+  text-align: center;
+
 }

@@ -5,11 +5,11 @@ import Form from "./components/Form/Form";
 
 export default function App() {
   return (
-    <div className="div__container">
+    <>
       <Header>Journal</Header>
       <Main>
-        <Form></Form>
+        <Form name="form--entry">Create</Form>
       </Main>
-    </div>
+      </>
   );
 }
