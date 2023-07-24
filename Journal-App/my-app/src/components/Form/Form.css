@@ -11,5 +11,13 @@ form {
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: var(--font-size);
+}
+
+button {
+  background-color: var(--color-nemo);
+  color: var(--color-foam);
+  border: 0px solid var(--color-water-10);
+  width: 5rem;
+  height: 2rem;
 }

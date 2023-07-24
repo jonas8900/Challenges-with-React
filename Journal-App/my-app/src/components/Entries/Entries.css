@@ -1,0 +1,15 @@
+.container__seciton {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+h3 {
+  font-size: var(--font-size);
+  color: var(--color-nemo);
+}
+
+h4 {
+  font-size: var(--font-size);
+}
