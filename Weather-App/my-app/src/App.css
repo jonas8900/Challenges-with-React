@@ -1,0 +1,12 @@
+.App__headline--condition {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.App_headline--nextTo {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+  
+}
