@@ -33,12 +33,21 @@ function App() {
   useEffect(() => {
     setInterval(handleFetch, 5000);
   });
-  console.log(weather);
-  console.log(cards);
 
   const filteredCards = cards.filter(
     (card) => card.isForGoodWeather === weather.isGoodWeather
   );
+
+  //ez
+
+  function handleDeleteCard(clickedID) {
+    setCards(
+      filteredCards.filter((filteredCard) => filteredCard.id !== clickedID)
+    );
+    console.log(clickedID);
+  }
+
+  // delete Card when you click the Button
 
   return (
     <>
@@ -51,6 +60,7 @@ function App() {
       <ActivityList
         cards={filteredCards}
         trueOrFalseChecker={weather.isGoodWeather}
+        handleDeleteCard={handleDeleteCard}
       />
       <Form addOnSubmit={handleAddCard} />
     </>

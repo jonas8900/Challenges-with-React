@@ -4,10 +4,10 @@ import "./ActivityList.css";
 export default function ActivityList({
   cards,
   trueOrFalseChecker,
-  onDeleteActivity,
+  handleDeleteCard
 }) {
-  console.log("cards", cards);
 
+console.log(cards)
   return (
     <>
       <section>
@@ -21,7 +21,7 @@ export default function ActivityList({
               <li className="activity__list--item" key={card.id}>
                 {card.name}
               </li>
-              <button onClick={() => onDeleteActivity(card.id)} type="button">
+              <button onClick={() => handleDeleteCard(card.id)} type="button">
                 delete card
               </button>
             </React.Fragment>
