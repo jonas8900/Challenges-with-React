@@ -1,18 +1,18 @@
 import React from "react";
 import "./ActivityList.css";
+import "../../App.css";
 
 export default function ActivityList({
   cards,
   trueOrFalseChecker,
-  handleDeleteCard
+  handleDeleteCard,
 }) {
-
-console.log(cards)
+  console.log(cards);
   return (
     <>
       <section>
         <h2 className="activityList__headline">
-          {trueOrFalseChecker ? "its a beautiful day" : "go online"}
+          {trueOrFalseChecker ? "its a beautiful day" : "I`ts very bad Outside"}
         </h2>
         <ul className="activity__list">
           {" "}

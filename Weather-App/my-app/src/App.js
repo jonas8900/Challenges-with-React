@@ -44,13 +44,13 @@ function App() {
     setCards(
       filteredCards.filter((filteredCard) => filteredCard.id !== clickedID)
     );
-    console.log(clickedID);
   }
 
   // delete Card when you click the Button
 
   return (
     <>
+      <section className="App__section">
       <div className="App_headline--nextTo">
         <h1 className="App__headline--condition">{weather.condition}</h1>
         <h2 className="App__headline--temperature">
@@ -63,6 +63,7 @@ function App() {
         handleDeleteCard={handleDeleteCard}
       />
       <Form addOnSubmit={handleAddCard} />
+      </section>
     </>
   );
 }
