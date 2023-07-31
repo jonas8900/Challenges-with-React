@@ -5,9 +5,11 @@ async function fetcher(URL) {
   // das ist ein Argument (URL)
   const response = await fetch(URL);
 
+  //check ob es einen Error ist
   if (!response.ok) {
     const error = new Error("An error occurred while fetching the data.");
     console.log(error);
+    //
     error.info = await response.json();
     error.status = response.status;
     throw error;
